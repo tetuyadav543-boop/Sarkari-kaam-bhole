@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bhole Search</title>
+
+<style>
+
+body{
+font-family:Arial;
+text-align:center;
+margin-top:120px;
+transition:0.3s;
+}
+
+.logo{
+font-size:60px;
+font-weight:bold;
+color:#4285F4;
+}
+
+input{
+width:400px;
+padding:12px;
+border-radius:25px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+button{
+margin-top:15px;
+padding:10px 20px;
+border:none;
+cursor:pointer;
+background:#f1f1f1;
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+</style>
+
+</head>
+
+<body id="body">
+
+<h1 class="logo">Bhole Search</h1>
+
+<input type="text" id="search" placeholder="Search anything">
+
+<br>
+
+<button onclick="search()">Search</button>
+<button onclick="darkMode()">Dark Mode</button>
+
+<script>
+
+function search(){
+var text=document.getElementById("search").value;
+window.location="https://www.google.com/search?q="+text;
+}
+
+function darkMode(){
+document.getElementById("body").classList.toggle("dark");
+}
+
+</script>
+
+</body>
+</html>
